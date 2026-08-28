@@ -34,12 +34,26 @@ DVC-Experiment-tracking/
 │   └── student_performance.csv.dvc # DVC pointer/metadata file (tracked by Git)
 ├── src/
 │   └── model_training.py           # Model training and DVCLive logging script
-└── README.md                       # This reference and revision guide
+├── requirements.txt                # Python dependencies
+├── README.md                       # This reference and revision guide
 ```
 
 ---
 
 ## 🚀 How It Works (Step-by-Step)
+
+### 0. Environment Setup
+```bash
+# Create and activate virtual environment
+python -m venv myvenv
+# Windows:
+myvenv\Scripts\activate
+# Linux/macOS:
+source myvenv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
 
 ### 1. Data Generation & DVC Tracking
 The synthetic dataset is generated using `data/data_generate.py`. Because data files can grow large, the CSV is placed under DVC control:

@@ -1,0 +1,7 @@
+# Core ML and Data Processing
+pandas
+scikit-learn
+
+# DVC and Experiment Tracking
+dvc
+dvclive
